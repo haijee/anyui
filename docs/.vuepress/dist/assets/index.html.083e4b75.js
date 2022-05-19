@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a,a as o,b as n}from"./app.de7dcd56.js";const s={},c={id:"hello-any",tabindex:"-1"},_=o("a",{class:"header-anchor",href:"#hello-any","aria-hidden":"true"},"#",-1),r=n(" Hello Any"),d=[_,r];function h(i,l){return t(),a("h1",c,d)}var x=e(s,[["render",h],["__file","index.html.vue"]]);export{x as default};
