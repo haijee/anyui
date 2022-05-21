@@ -1,9 +1,7 @@
 
 const { defaultTheme } = require('vuepress')
 
-
 module.exports = {
-  lang: 'zh-CN',
   title: 'anyui',
   description: 'anyui的博客',
   base: '/anyui/', //配合项目部署路径
@@ -21,16 +19,8 @@ module.exports = {
       {
         text: '首页',
         link: '/',
-
       },
     ],
-
-    sidebar: {
-
-    }
-    // SidebarItem
-
-
 
   }),
 }
