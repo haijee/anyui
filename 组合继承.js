@@ -1,3 +1,5 @@
+// https://juejin.cn/post/6844904069887164423
+
 // 基类
 var Person = function (name, age) {
     this.name = name;
