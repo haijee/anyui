@@ -2,6 +2,7 @@ const add = function (x, y, z) {
   return x + y + z;
 };
 
+
 const curry = function (fn) {
   return function curried(...args) {
     console.log(fn.length, args.length);
@@ -15,6 +16,15 @@ const curry = function (fn) {
     }
   };
 };
+
+// 简化版
+
+const curry1 = function (fn) {
+  return function curried(...args) {
+    return fn.length === args.length ? fn.apply(this, args) : curried.bind(this, ...args);
+  };
+};
+
 
 const curry_add = curry(add);
 const next = curry_add(111);
