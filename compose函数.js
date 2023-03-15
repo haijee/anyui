@@ -12,6 +12,13 @@ const compose = function(){
   }
 }
 
+// 简介版
+function compose1(...fns) {
+  return fns.reduce((f, g) => (...args) => {
+    return f(g(...args));
+  });
+}
+
 // 验证
 let calculate = compose(multiply, add);
 let res = calculate(10);
