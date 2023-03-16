@@ -16,11 +16,18 @@ const add = function (x, y, z) {
       }
     };
   };
+
+// 简化版
+const curry1 = function (fn) {
+  return function curried(...args) {
+    return fn.length === args.length ? fn.apply(this, args) : curried.bind(this, ...args);
+  };
+};
   
-  const curry_add = curry(add);
-  const next = curry_add(111);
-  const next1 = next(6);
-  const next2 = next1(10);
-  console.log(next2);
+const curry_add = curry(add);
+const next = curry_add(111);
+const next1 = next(6);
+const next2 = next1(10);
+console.log(next2);
   
   

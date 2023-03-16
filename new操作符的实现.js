@@ -27,3 +27,15 @@ function objectFactory() {
 function fn(){}
 
 objectFactory(fn,1)
+
+
+// 简化版
+
+function _new(/* 构造函数 */ constructor, /* 构造函数参数 */ ...params) {
+  // 创建一个空对象，继承构造函数的 prototype 属性
+  let context = Object.create(constructor.prototype);
+  // 执行构造函数
+  let result = constructor.apply(context, params);
+  // 如果返回结果是对象，就直接返回，否则返回 context 对象
+  return typeof result === 'object' && result != null ? result : context;
+}
