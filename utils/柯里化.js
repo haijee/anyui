@@ -1,3 +1,6 @@
+
+
+
 const add = function (x, y, z) {
   return x + y + z;
 };
@@ -5,7 +8,6 @@ const add = function (x, y, z) {
 
 const curry = function (fn) {
   return function curried(...args) {
-    console.log(fn.length, args.length);
     //这里不能用箭头函数
     if (fn.length === args.length) {
       return fn.apply(this, args);

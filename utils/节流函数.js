@@ -1,3 +1,5 @@
+
+
 function throttle(fn, wait) {
   //记录上一次函数触发时间
   let lastTime = 0;

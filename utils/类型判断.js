@@ -1,3 +1,8 @@
+
+
+
+
+
 function getType(data){
     let type = typeof data;
     if(type !== "object"){
@@ -5,6 +10,7 @@ function getType(data){
     }
     return Object.prototype.toString.call(data).replace(/^[object (\S+)]$/,'$1')
 }
+
 function Person(){}
 console.log(getType(1)); // number
 console.log(getType(true)); // boolean
