@@ -1,3 +1,5 @@
+// 构造函数创建对象
+
 function createObject(name, age) {
   this.name = name;
   this.age = age;

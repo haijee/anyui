@@ -1,8 +1,5 @@
 
 
-
-
-
 function getType(data){
     let type = typeof data;
     if(type !== "object"){

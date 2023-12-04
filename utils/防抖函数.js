@@ -2,7 +2,6 @@
 
 
 function debounce(fn, delay = 300) {
-  console.log('----')
   //记录上一次的延时器
   let timer = null;
   return function (...args) {
